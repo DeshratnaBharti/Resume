@@ -10,46 +10,73 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            margin: 10px;
         }
         header {
             padding: 20px 0;
             border-bottom: 1px solid #333;
+            text-align: center;
+            width: 100%;
         }
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 32px;
         }
         header p {
             margin: 5px 0;
+            font-size: 18px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            list-style: none;
+            margin: 5px 0;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
         }
         section {
             margin: 20px 0;
         }
         section h2 {
-            border-bottom: 1px solid #333;
+            border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            margin: 5px 0;
+            margin: 10px 0;
         }
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
+        .achievement-item, .technical-skill-item, .coursework-item {
+            margin-bottom: 10px;
         }
-        .contact-info div {
-            flex: 1;
-        }
-        .contact-info div:last-child {
-            text-align: right;
+        .technical-skill-item ul, .achievement-item ul, .coursework-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -58,7 +85,7 @@
         <header>
             <h1>Deshratna Bharti</h1>
             <p>Software Engineer Intern</p>
-            <div class="contact-info">
+            <ul class="contact-info">
                 <li>📞 +91-9060025078</li>
                 <li>📧 deshratnabharti597@gmail.com</li>
                 <li>📍 Patna -(Bihar)india</li>
@@ -66,55 +93,88 @@
                 <li><a href="https://github.com/DeshratnaBharti">Github</a></li>
                 <li><a href="https://leetcode.com/u/deshratnabharti597/">Leetcode</a></li>
             </ul>
-            </div>
         </header>
+    </div>
 
-        <section>
-            <h2>ACHIEVEMENTS</h2>
-            <ul>
-                <li>Triumphed in the first round of codevita 2024, got rank 5097.</li>
-                <li>Achieved 100 Days Badge, 50 Days Badge on Leetcode.</li>
-                <li>Solved 170+ Coding Questions on Leetcode Max : (1460).</li>
-                <li>Solved 135+ Coding Questions on Geeksfordeeks Max : (1486).</li>
-                <li>Actively participated in sih Hackathon.</li>
-            
-            </ul>
-        </section>
+    <div class="container">
+        <div class="left-column">
+            <section>
+                <h2>ACHIEVEMENTS</h2>
+                <div class="achievement-item">
+                    <ul>
+                        <li>Triumphed in the first round of codevita 2024, got rank 5097.</li>
+                        <li>Achieved 100 Days Badge, 50 Days Badge on Leetcode.</li>
+                        <li>Solved 170+ Coding Questions on Leetcode Max : (1460).</li>
+                        <li>Solved 135+ Coding Questions on Geeksfordeeks Max : (1486).</li>
+                        <li>Actively participated in sih Hackathon.</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section>
-            <h2>TECHNICAL SKILLS</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, C++, C, JavaScript</li>
-                <li><strong>Frameworks & Libraries:</strong> HTML, CSS, ReactJS, NodeJS, ExpressJS, MongoDB, Bootstrap, Tailwind CSS</li>
-                <li><strong>Version Control:</strong> Git, GitHub</li>
-                <li><strong>Other Tools:</strong> Netlify, Canva</li>
-            </ul>
-        </section>
+            <section>
+                <h2>TECHNICAL SKILLS</h2>
+                <div class="technical-skill-item">
+                    <strong>Programming Languages:</strong>
+                    <ul>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="technical-skill-item">
+                    <strong>Frameworks & Libraries:</strong>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>ReactJS</li>
+                        <li>NodeJS, ExpressJS</li>
+                        <li>MongoDB</li>
+                        <li>Bootstrap, Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="technical-skill-item">
+                    <strong>Version Control:</strong>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="technical-skill-item">
+                    <strong>Other Tools:</strong>
+                    <ul>
+                        <li>Netlify</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-        <section>
-            <h2>COURSEWORK SUBJECTS</h2>
-            <ul>
-                <li>Operating System</li>
-                <li>Object-Oriented Programming</li>
-            </ul>
-        </section>
+        <div class="right-column">
+            <section>
+                <h2>COURSEWORK SUBJECTS</h2>
+                <div class="coursework-item">
+                    <ul>
+                        <li>Operating System</li>
+                        <li>Object-Oriented Programming</li>
+                    </ul>
+                </div>
+            </section>
 
-        <section>
-            <h2>EDUCATION</h2>
-            <ul>
-                <li><strong>B.Tech. (CSE) - 8.03 CGPA</strong><br>BEU University<br>2022 – 2026<br>Vaishali, Bihar</li>
-            </ul>
-        </section>
+            <section>
+                <h2>EDUCATION</h2>
+                <ul>
+                    <li><strong>B.Tech. (CSE) - 8.03 CGPA</strong><br>BEU University<br>2022 – 2026<br>Vaishali, Bihar</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>PROJECTS</h2>
-            <ul>
-                <li><strong>Tic-Tac-Toe</strong><br>Designed and implemented a C++ Tic-Tac-Toe game with full game logic, input validation, and player management using arrays and conditionals.</li>
-
-                <li><strong>Guessing Game</strong><br>Created a C++ number guessing game with object-oriented programming, player roles, and result processing using classes and conditionals.</li>
-    
-            </ul>
-        </section>
+            <section>
+                <h2>PROJECTS</h2>
+                <ul>
+                    <li><strong>Tic-Tac-Toe</strong><br>Designed and implemented a C++ Tic-Tac-Toe game with full game logic, input validation, and player management using arrays and conditionals.</li>
+                    <li><strong>Guessing Game</strong><br>Created a C++ number guessing game with object-oriented programming, player roles, and result processing using classes and conditionals.</li>
+                </ul>
+            </section>
+        </div>
     </div>
 </body>
 </html>
