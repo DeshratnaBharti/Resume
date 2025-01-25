@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             background-color: #f4f4f4;
-            padding: 20px;
         }
         .container {
-            width: 80%;
+            width: 100%;
+            max-width: 210mm; /* A4 width */
             margin: auto;
             overflow: hidden;
             background: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-        }
-        .left-column, .right-column {
-            flex: 1;
-            margin: 10px;
+            flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
         }
         header {
             padding: 20px 0;
@@ -42,18 +43,22 @@
         }
         .contact-info {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             list-style: none;
             padding: 0;
         }
         .contact-info li {
             list-style: none;
-            margin: 5px 0;
+            margin: 5px 20px;
         }
         .contact-info a {
             text-decoration: none;
             color: #333;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            margin: 10px;
         }
         section {
             margin: 20px 0;
