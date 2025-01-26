@@ -7,7 +7,7 @@
     <style>
         @page {
             size: A4;
-            margin: 20mm;
+            margin: 15mm; /* Adjusted margin */
         }
         body {
             font-family: Arial, sans-serif;
@@ -22,24 +22,24 @@
             margin: auto;
             overflow: hidden;
             background: #fff;
-            padding: 20px;
+            padding: 10px 15px; /* Adjusted padding to save space */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
         }
         header {
-            padding: 20px 0;
+            padding: 5px 0; /* Adjusted padding to move header slightly up */
             border-bottom: 1px solid #333;
             text-align: center;
             width: 100%;
         }
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 28px; /* Slightly reduced font size */
         }
         header p {
-            margin: 5px 0;
-            font-size: 18px;
+            margin: 3px 0;
+            font-size: 16px; /* Slightly reduced font size */
         }
         .contact-info {
             display: flex;
@@ -50,7 +50,7 @@
         }
         .contact-info li {
             list-style: none;
-            margin: 5px 20px;
+            margin: 3px 15px; /* Adjusted margin to save space */
         }
         .contact-info a {
             text-decoration: none;
@@ -58,30 +58,30 @@
         }
         .left-column, .right-column {
             flex: 1;
-            margin: 10px;
+            margin: 8px; /* Adjusted margin to save space */
         }
         section {
-            margin: 20px 0;
+            margin: 10px 0; /* Adjusted margin to save space */
         }
         section h2 {
             border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 24px;
+            padding-bottom: 5px; /* Adjusted padding */
+            margin-bottom: 10px; /* Adjusted margin */
+            font-size: 22px; /* Slightly reduced font size */
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            margin: 10px 0;
+            margin: 5px 0; /* Adjusted margin to save space */
         }
         .achievement-item, .technical-skill-item, .coursework-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px; /* Adjusted margin to save space */
         }
         .technical-skill-item ul, .achievement-item ul, .coursework-item ul {
             list-style-type: disc;
-            padding-left: 20px;
+            padding-left: 18px; /* Adjusted padding to save space */
         }
     </style>
 </head>
@@ -137,20 +137,6 @@
                         <li>Bootstrap, Tailwind CSS</li>
                     </ul>
                 </div>
-                <div class="technical-skill-item">
-                    <strong>Version Control:</strong>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
-                <div class="technical-skill-item">
-                    <strong>Other Tools:</strong>
-                    <ul>
-                        <li>Netlify</li>
-                        <li>Canva</li>
-                    </ul>
-                </div>
             </section>
         </div>
 
@@ -175,9 +161,27 @@
             <section>
                 <h2>PROJECTS</h2>
                 <ul>
-                    <li><strong>Tic-Tac-Toe</strong><br>Designed and implemented a C++ Tic-Tac-Toe game with full game logic, input validation, and player management using arrays and conditionals.</li>
-                    <li><strong>Guessing Game</strong><br>Created a C++ number guessing game with object-oriented programming, player roles, and result processing using classes and conditionals.</li>
+                    <li><strong><a href="https://github.com/DeshratnaBharti/Tic-tac-toe.cpp/blob/main/tic_tac_toe.cpp">Tic-tac-toe</a></strong><br>
+                        Implemented a console-based Tic-Tac-Toe game.
+                        Managed player moves and alternating turns.
+                        Validated inputs and checked for winning conditions.
+                        Declared the winner or a tie based on the game state.
+                        Demonstrates C++ programming, game logic, and user interaction.
+                    </li>
+                    <li><strong><a href="https://github.com/DeshratnaBharti/Project-Number_guessing_game-using-OOPS/blob/main/miniproject1.cpp">Guessing Game</a></strong><br>
+                        Created a C++ number guessing game with object-oriented programming, player roles, and result processing using classes and conditionals.
+                    </li>
                 </ul>
+            </section>
+
+            <section>
+                <h2>VERSION CONTROL</h2>
+                <div class="technical-skill-item">
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </section>
         </div>
     </div>
